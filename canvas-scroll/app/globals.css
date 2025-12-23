@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --base-100: #fafafa;
+  --base-200: #deded5;
+  --base-300: #0f0f0f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-manrope: var(--font-manrope);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--base-100);
+  color: var(--base-300);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: -0.1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.075rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero,
+.outro {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  padding: 2rem;
+  background-color: var(--base-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
